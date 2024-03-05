@@ -4,7 +4,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { InputText } from "./component/InputText";
 import { InputPass } from "./component/InputPass";
-import Image from "next/image";
 
 export default function Root() {
   const [email, setEmail] = useState("");
@@ -72,7 +71,7 @@ export default function Root() {
           <br />
           <br />
           <p>
-            New to Netflix?{" "}
+            {"New to Netflix?"}
             <Link className=" text-white" href={"#"}>
               Sign up now
             </Link>
@@ -80,8 +79,9 @@ export default function Root() {
           </p>
           <br />
           <p>
-            This page is protected by Google reCAPTCHA to ensure you're not a
-            bot.{" "}
+            {
+              "This page is protected by Google reCAPTCHA to ensure you're not a bot."
+            }
             <Link className=" text-blue-500" href={"#"}>
               Learn more.
             </Link>
@@ -91,7 +91,7 @@ export default function Root() {
       <hr className=" border-[#ffffff77]" />
       <footer className=" p-6 text-[#ffffff77] flex flex-col gap-4 w-full bg-[rgba(0,0,0,0.6)] z-10 lg:px-[10rem] min-[1920px]:px-[30rem]">
         <h3 className=" mb-5">
-          Questions? Call <Link href={"#"}>+66 1800 012 674</Link>
+          {"Questions? Call"} <Link href={"#"}>+66 1800 012 674</Link>
         </h3>
         <ul className=" grid grid-cols-2 md:grid-cols-4 gap-3 text-[0.8rem]">
           <Link href={"#"}>FAQ</Link>
