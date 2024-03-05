@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #root_div {
+  background-image: url(/image/TH-en-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+a:hover {
+  text-decoration-line: underline;
+}
